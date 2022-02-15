@@ -81,7 +81,7 @@ Open `Git Bash` or `Terminal` and go to the directory in which you want to creat
 
 <p align="center">
  <a target="_blank" href="https://github.com/btdevcommunity/documentation/blob/main/git-github-tutorial.md">
-  <img src="https://github.com/btdevcommunity/documentation/blob/main/assets/git-github-tutorial/1_git_bash_options.png" alt="Git Bash Option" height="493px" width="398px"/>
+  <img src="https://github.com/btdevcommunity/documentation/blob/main/assets/git-github-tutorial/1_git_bash_options.png" alt="Git Bash Option" height="370px" width="298px"/>
  </a>
 </p>
 
