@@ -47,7 +47,7 @@
 
 </br>
 
-### Step 0: Install Git and create an account in Github.
+## Step 0: Install Git and create an account in Github.
 
 You need to install `Git` in your system and create a `GitHub` account. All git commands are the same for Windows, Mac and Linux.
 
@@ -73,7 +73,7 @@ Some basic commands that we will be using are:
 
 </br>
 
-### Step 1: Create local git repository
+## Step 1: Create local git repository
 
 When creating a new project in your local machine using git, you will create a repository also known as a repo in short.
 
@@ -111,12 +111,12 @@ hint: Using 'master' as the name for the initial branch. This default branch nam
 hint: is subject to change. To configure the initial branch name to use in all
 hint: of your new repositories, which will suppress this warning, call:
 
-hint: 	git config --global init.defaultBranch <name>
+hint:     git config --global init.defaultBranch <name>
 
 hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
 hint: 'development'. The just-created branch can be renamed via this command:
 
-hint: 	git branch -m <name>
+hint:     git branch -m <name>
 Initialized empty Git repository in D:/new_project/.git/
 ```
 
@@ -124,7 +124,7 @@ Once you run the `$ git init` command, you get some hints and a command at the e
 
 </br>
 
-### Step 2: Add new files to the repository
+## Step 2: Add new files to the repository
 
 You can create new files using your desired text editor or via `touch` command.
 
@@ -147,14 +147,14 @@ No commits yet
 
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
-	README.md
+    README.md
 
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 
  Here, the `$ git status` command says that you have created a file called `README.md` but it says it's untracked and you haven't added it to a branch to be tracked. It won't be added to the git branch and get tracked unless you use the  `$ git add` command.
- 
- </br>
+
+</br>
 
 #### An interlude: The staging environment, the commit and you.
 
@@ -173,7 +173,7 @@ To add a file to a commit,  first, you need to add it to the staging environment
 
 </br>
 
-### Step 3: Add a file to the staging environment
+## Step 3: Add a file to the staging environment
 
 Add a file to the staging environment by using the `$ git add <filename with extension>` command.
 
@@ -188,12 +188,12 @@ No commits yet
 
 Changes to be committed:
   (use "git rm --cached <file>..." to unstage)
-	new file:   README.md
+    new file:   README.md
 ```
 
 </br>
 
-### Step 4: Create a commit
+## Step 4: Create a commit
 
 Run a command `$ git commit -m <Your commit message>` to create a commit from your staged file.
 
@@ -208,7 +208,7 @@ The message at the end of the command should be something related to the commit 
 
 </br>
 
-### Step 5: Create new branch
+## Step 5: Create new branch
 
 Branches allow you to develop features, fix bugs, or safely experiment with new ideas in a contained area of your repository. The Master branch is the first branch made when you initialize a Git repository. All repositories must have a master branch.
 
@@ -238,7 +238,7 @@ The branch name with an asterisk indicates which branch you are currently at the
 
 </br>
 
-### Step 6: Create a new repository on GitHub
+## Step 6: Create a new repository on GitHub
 
 If you only want to keep track of your project in your local environment, you don’t need to use GitHub. But if you would like to work in a team, you can use GitHub to collaboratively modify the project code.
 
@@ -259,7 +259,6 @@ To create a [new repository](https://github.com/new) on your GitHub, go to the `
 </p>
 
 After clicking on the `New` button, GitHub will ask you to provide the `name` of the repository and give a brief description about it.
-
 
 <p align="center">
  <a target="_blank" href="https://github.com/btdevcommunity/documentation/blob/main/git-github-tutorial.md">
@@ -306,7 +305,7 @@ Refresh your GitHub page you will see your local repository pushed successfully*
 
 </br>
 
-### Step 7: Push a branch to GitHub
+## Step 7: Push a branch to GitHub
 
 Now we will push the local branch which we have created to the GitHub repository.
 If your branch is approved by the repository owner (In this case you are the owner so you can approve yourself), s/he will merge it to the main branch.
@@ -337,7 +336,7 @@ Note: If this is your first time using GitHub locally then it might prompt you t
 
 </br>
 
-### Step 8: Create a pull request (PR)
+## Step 8: Create a pull request (PR)
 
 Pull request is a way to notify the repository owner that you need to make some changes in their primary branch.
 
@@ -404,7 +403,7 @@ Click on `create pull request`.
 
 </br>
 
-### Step 9: Merge a Pull Request
+## Step 9: Merge a Pull Request
 
 Now click on `merge pull request`. This will merge the changes into the primary branch
 
@@ -432,7 +431,7 @@ Click on the `commit` tab where you can see the hash code of the commit. *Hash c
 
 </br>
 
-### Step 10: Get GitHub changes to your local machine
+## Step 10: Get GitHub changes to your local machine
 
 ***(We haven't done any changes in the GitHub repository in this case. For instance if you are working in a team the repository get updates on Github so you need to get changes to your local machine )***
 
@@ -509,9 +508,7 @@ Additional command
 - Switch branch: `$ git checkout <name of branch>`
 - Delete branch: `$ get branch -d <name of branch>`
 
-
-#### You sucessfully completed learning basic Git
-
+### You sucessfully completed learning basic Git
 
 Additional Resources
 
