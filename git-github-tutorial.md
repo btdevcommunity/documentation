@@ -81,7 +81,7 @@ Open `Git Bash` or `Terminal` and go to the directory in which you want to creat
 
 <p align="center">
  <a target="_blank" href="https://github.com/btdevcommunity/documentation/blob/main/git-github-tutorial.md">
-  <img src="https://github.com/btdevcommunity/documentation/blob/main/assets/git-github-tutorial/1_git_bash_options.png" alt="Git Bash Option" />
+  <img src="https://github.com/btdevcommunity/documentation/blob/main/assets/git-github-tutorial/1_git_bash_options.png" alt="Git Bash Option" height="493px" width="398px"/>
  </a>
 </p>
 
@@ -238,7 +238,7 @@ To create a [new repository](https://github.com/new) on your GitHub, go to the `
 
 <p align="center">
  <a target="_blank" href="https://github.com/btdevcommunity/documentation/blob/main/git-github-tutorial.md">
-  <img src="3_github_repositories.png" alt="GitHub Repositories" />
+  <img src="https://github.com/btdevcommunity/documentation/blob/main/assets/git-github-tutorial/3_github_repositories.png" alt="GitHub Repositories" />
  </a>
 </p>
 
