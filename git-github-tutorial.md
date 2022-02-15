@@ -1,12 +1,10 @@
 # <p align="center">Introduction to GitHub</p>
 
-## 
 
 ## What is Git?
 
 ***Git*** is a free and open-source distributed *version control system* designed originally by Linus Torvalds.
 
----
 
 ## Difference Between Github and Git
 
@@ -21,9 +19,6 @@
 | Launched in 2008.                          | Released in 2005.                                          |
 | Built-in user management system.           | No user management feature.                                |
 
-<!--  Use mark down table-->
-
----
 
 ## What is GitHub?
 
@@ -45,11 +40,8 @@
 - Open Source project (Public Repositories)
 - Corporates and companies to host their code in private repository 
 
----
 
 ## Configure and using Git and GitHub
-
-
 
 ### Step 0: Install Git and create an account in Github.
 
@@ -63,13 +55,9 @@ Once you have installed Git, you can create a free account on GitHub from the li
 
 `GitHub` - [Join · GitHub](https://github.com/signup)
 
-
-
 We will be using *Git* commands and if you are unfamiliar with it, you may explore more from the link below.
 
 `Commands` - [Git commands for beginners | Ubuntu](https://ubuntu.com/tutorials/command-line-for-beginners)
-
-
 
 Some basic commands that we will be using are:
 
@@ -79,27 +67,23 @@ Some basic commands that we will be using are:
 4. `pwd` - *View the present working directory*
 5. `touch` - *Create files*
 
-
-
 ### Step 1: Create local git repository
 
 When creating a new project in your local machine using git, you will create a repository also known as a repo in short.
 
-
-
 *For Windows:*
 Right Click on the directory where you want to create the repository and click `Git Bash Here`
 
-
-
 # Image
-
-
 
 *For Mac and Linux:*
 Open `Git Bash` or `Terminal` and go to the directory in which you want to create the local repository using `cd` (change directory) command. This can also be done in windows.
 
-<!--  link image from our server-->
+<p align="center">
+ <a target="_blank" href="https://github.com/btdevcommunity/documentation/blob/main/git-github-tutorial.md">
+  <img src="https://github.com/btdevcommunity/documentation/blob/main/assets/git-github-tutorial/1_git_bash_options.png" alt="Git Bash Option" />
+ </a>
+</p>
 
 To begin moving to your working directory use the cd command if you haven't clicked `Git Bash Here` in windows. For Mac and Linux operating systems, you may follow this until you reach your desired directory. 
 
@@ -109,15 +93,11 @@ Once you are in your desired directory, you may create the project directory by 
 - `$ mkdir new_project` - *(Create a new directory called new_project)*
 - `$ cd new_project` - *(Move into the new_project directory)*
 
-
-
 ```bash
 $ cd /d
 $ mkdir new_project
 $ cd new_project
 ```
-
-<!--  link image from our server-->
 
 To initialize a git repository in the root of the folder, run the `$ git init` command:
 
@@ -136,11 +116,7 @@ hint: 	git branch -m <name>
 Initialized empty Git repository in D:/new_project/.git/
 ```
 
-<!--  link image from our server-->
-
 Once you run the `$ git init` command, you get some hints and a command at the end showing that the git repository is initialized in your particular directory.
-
-
 
 ### Step 2: Add new files to the repository
 
@@ -152,14 +128,10 @@ $ ls
 README.md
 ```
 
-<!--  link image from our server-->
-
 `README.md` is a markdown file that contains the details of your repository or project.
 The ls command shows the lists of files in the current directory
 
 The `$ git status` command gives you the current state of the project including all commits, stages and the files tracked by git.
-
-
 
 ```bash
 $ git status
@@ -174,11 +146,7 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 
-<!--  link image from our server-->
-
  Here, the `$ git status` command says that you have created a file called `README.md` but it says it's untracked and you haven't added it to a branch to be tracked. It won't be added to the git branch and get tracked unless you use the  `$ git add` command.
-
-
 
 #### An interlude: The staging environment, the commit and you.
 
@@ -193,19 +161,13 @@ To add a file to a commit,  first, you need to add it to the staging environment
 
 - `$ git add <file name>` which will be done in *step 3*
 
-
-
 *Note: The staging environment, also called `staging` is the preferred term but it is also referred to as `indexing`.*
-
-
 
 ### Step 3: Add a file to the staging environment
 
 Add a file to the staging environment by using the `$ git add <filename with extension>` command.
 
 If you see the git status the file has not been committed yet but the file has been staged for now.
-
-
 
 ```bash
 $ git add README.md
@@ -219,13 +181,9 @@ Changes to be committed:
 	new file:   README.md
 ```
 
-<!--  link image from our server-->
-
 ### Step 4: Create a commit
 
 Run a command `$ git commit -m <Your commit message>` to create a commit from your staged file.
-
-
 
 ```bash
 $ git commit -m "First Commit"
@@ -234,11 +192,7 @@ $ git commit -m "First Commit"
  create mode 100644 README.md
 ```
 
-<!--  link image from our server-->
-
 The message at the end of the command should be something related to the commit contained, it can be a new feature, bug fixes or typos. Don’t put a message like `“ashajsdhgf”` or `“updates”`. This is because other programmers going through your project won't be understanding what changes you made in the commit. Commit lives forever in the repository and if you leave a meaningful commit message it will help other programmers to understand easily or it can be you in future who want to figure out why this change was made years later.
-
-
 
 ### Step 5: Create new branch
 
@@ -256,8 +210,6 @@ $ git checkout -b menu
 Switched to a new branch 'menu'
 ```
 
-<!--  link image from our server-->
-
 Use the `$ git branch` command to see your branch details.
 
 ```bash
@@ -266,13 +218,9 @@ $ git branch
   * menu
 ```
 
-<!--  link image from our server-->
-
 The branch name with an asterisk indicates which branch you are currently at the moment.
 
 *Note: By default, every git repository’s first branch is the master branch and is named as the `main` branch primary branch in a project.*
-
-
 
 ### Step 6: Create a new repository on GitHub
 
@@ -280,39 +228,38 @@ If you only want to keep track of your project in your local environment, you do
 
 First, `Login` to [GitHub](https://github.com) and you will see your dashboard similar to this.
 
-
-
-# 2_github_dashboard
-
-<!-- link image from our server-->
-
-<!--  link image from our server-->
+<p align="center">
+ <a target="_blank" href="https://github.com/btdevcommunity/documentation/blob/main/git-github-tutorial.md">
+  <img src="https://github.com/btdevcommunity/documentation/blob/main/assets/git-github-tutorial/2_github_dashboard.png" alt="GitHub Dashboard" />
+ </a>
+</p>
 
 To create a [new repository](https://github.com/new) on your GitHub, go to the `Repositories` tab in your dashboard and click on `New` (green button)
 
-
-
-# 3_github_repositories
-
-<!--  link image from our server-->
+<p align="center">
+ <a target="_blank" href="https://github.com/btdevcommunity/documentation/blob/main/git-github-tutorial.md">
+  <img src="3_github_repositories.png" alt="GitHub Repositories" />
+ </a>
+</p>
 
 After clicking on the `New` button, GitHub will ask you to provide the `name` of the repository and give a brief description about it.
 
 
-
-# 4_create_repository
-
-<!--  link image from our server-->
+<p align="center">
+ <a target="_blank" href="https://github.com/btdevcommunity/documentation/blob/main/git-github-tutorial.md">
+  <img src="https://github.com/btdevcommunity/documentation/blob/main/assets/git-github-tutorial/4_create_repository.png" alt="Create Repository" />
+ </a>
+</p>
 
 When you are done filling out the information click on the `Create repository` button.
 
 Then, GitHub will ask you to create the repository from scratch or to add a repository locally. In this case, we have already created a new local repository so we will follow the “... or push an existing repository from the command line” 
 
-
-
-# 5_repository_created
-
-
+<p align="center">
+ <a target="_blank" href="https://github.com/btdevcommunity/documentation/blob/main/git-github-tutorial.md">
+  <img src="https://github.com/btdevcommunity/documentation/blob/main/assets/git-github-tutorial/5_repository_created.png" alt="Repository Created" />
+ </a>
+</p>
 
 ```bash
 $ git remote add origin https://github.com/PemaRekdenDorjee/my_new_demo_repo.git
@@ -327,23 +274,19 @@ To https://github.com/PemaRekdenDorjee/my_new_demo_repo.git
 Branch 'main' set up to track remote branch 'main' from 'origin'.
 ```
 
-
-
 Once you get your own repository link, you can paste it in your bash and add origin using `$ git remote add origin <your repo link>`  command. You need to specify the branch you are pushing to by using the `$ git branch -M main` command.
 
 Finally, you push your commit by using  `$ git push -u origin main`. This command will push the local repository to Github
-
-
 
 *Note: 
 Repository Link should be yours when you add origin in bash
 Refresh your GitHub page you will see your local repository pushed successfully* 
 
-
-
-# 6_first_commit
-
-<!--  link image from our server-->
+<p align="center">
+ <a target="_blank" href="https://github.com/btdevcommunity/documentation/blob/main/git-github-tutorial.md">
+  <img src="https://github.com/btdevcommunity/documentation/blob/main/assets/git-github-tutorial/6_first_commit.png" alt="First Commit" />
+ </a>
+</p>
 
 ### Step 7: Push a branch to GitHub
 
@@ -352,8 +295,6 @@ If your branch is approved by the repository owner (In this case you are the own
 
 To push changes onto a new branch on GitHub
 Run this command: `$ git push origin <your branch name>`
-
-
 
 ```bash
 $ git push orgin menu
@@ -366,17 +307,15 @@ To https://github.com/PemaRekdenDorjee/my_new_demo_repo
  * [new branch]      menu -> menu
 ```
 
-<!--  link image from our server-->
-
 You can see now that two branches are pushed to the GitHub repository from our local repository.
 
-<!--  link image from our server-->
-
-# 7_two_branches
+<p align="center">
+ <a target="_blank" href="https://github.com/btdevcommunity/documentation/blob/main/git-github-tutorial.md">
+  <img src="https://github.com/btdevcommunity/documentation/blob/main/assets/git-github-tutorial/7_two_branches.png" alt="Two Branches" />
+ </a>
+</p>
 
 Note: If this is your first time using GitHub locally then it might prompt you to log in to GitHub username and password.
-
-
 
 ### Step 8: Create a pull request (PR)
 
@@ -385,8 +324,6 @@ Pull request is a way to notify the repository owner that you need to make some 
 For example, we will make some changes in our menu branch and pull request in the main branch in our repository to get merge. (Since this is on our repository same working principle is applied in other repositories).
 
 You can see here that the `README.md` file has been modified via text editor and is committed to the menu branch.
-
-
 
 ```bash
 $ git branch
@@ -403,8 +340,6 @@ $ git commit -m "added information in readme file"
  1 file changed, 1 insertion(+)
 ```
 
-<!--  link image from our server-->
-
 Again push the menu branch from the local repo to GitHub.
 
 ```bash
@@ -419,63 +354,60 @@ To https://github.com/PemaRekdenDorjee/my_new_demo_repo
    15890c2..2f693f4  menu -> menu
 ```
 
-<!--  link image from our server-->
-
 You can see that the GitHub menu branch is updated now.
 
-
-
-# 8_branch_update
-
-<!--  link image from our server-->
+<p align="center">
+ <a target="_blank" href="https://github.com/btdevcommunity/documentation/blob/main/git-github-tutorial.md">
+  <img src="https://github.com/btdevcommunity/documentation/blob/main/assets/git-github-tutorial/8_branch_update.png" alt="Branch Updated" />
+ </a>
+</p>
 
 Now we will pull the request and merge it to the main branch.
 Click on the `pull request` tab and click on `compare and pull request`.
 
-
-
-# 9_pull_request
-
-<!--  link image from our server-->
+<p align="center">
+ <a target="_blank" href="https://github.com/btdevcommunity/documentation/blob/main/git-github-tutorial.md">
+  <img src="https://github.com/btdevcommunity/documentation/blob/main/assets/git-github-tutorial/10_pull_request.png" alt="Pull Request" />
+ </a>
+</p>
 
 Now fill up the information in the comment section and assign yourself (In a team project you will assign others too).
 Labels as documentation (since we are updating the readme file which is serving as a document for what the project is about).
 For the reviewer leave blank (In a team you will assign a reviewer to review your changes).
 Click on `create pull request`.
 
-
-
-# 10_open_pull_request
-
-<!--  link image from our server-->
+<p align="center">
+ <a target="_blank" href="https://github.com/btdevcommunity/documentation/blob/main/git-github-tutorial.md">
+  <img src="https://github.com/btdevcommunity/documentation/blob/main/assets/git-github-tutorial/9_open_pull_request.png" alt="Pull Request" />
+ </a>
+</p>
 
 ### Step 9: Merge a Pull Request
 
 Now click on `merge pull request`. This will merge the changes into the primary branch
 
-
-
-# 11_open_pull_request
-
-<!--  link image from our server-->
+<p align="center">
+ <a target="_blank" href="https://github.com/btdevcommunity/documentation/blob/main/git-github-tutorial.md">
+  <img src="https://github.com/btdevcommunity/documentation/blob/main/assets/git-github-tutorial/11_open_pull_request.png" alt="Open Pull Request" />
+ </a>
+</p>
 
 You will see this message after successfully merging to the primary branch.
 
-
-
-# 12_merge_pull_request
-
-<!--  link image from our server-->
+<p align="center">
+ <a target="_blank" href="https://github.com/btdevcommunity/documentation/blob/main/git-github-tutorial.md">
+  <img src="https://github.com/btdevcommunity/documentation/blob/main/assets/git-github-tutorial/12_merge_pull_request.png" alt="Merge Pull Request" />
+ </a>
+</p>
 
 Click on the `commit` tab where you can see the hash code of the commit. *Hash code* is a unique identifier of that specific commit. It is useful to refer to specific commits and when undoing changes(use the `$ git revert <hash code>` command to backtrack).
 
+<p align="center">
+ <a target="_blank" href="https://github.com/btdevcommunity/documentation/blob/main/git-github-tutorial.md">
+  <img src="https://github.com/btdevcommunity/documentation/blob/main/assets/git-github-tutorial/13_pull_request_merged.png" alt="Merged Pull Request" />
+ </a>
+</p>
 
-
-# 13_pull_request_merged
-
-
-
-<!--  link image from our server-->
 
 ### Step 10: Get GitHub changes to your local machine
 
@@ -483,24 +415,22 @@ Click on the `commit` tab where you can see the hash code of the commit. *Hash c
 
 For this case we will directly edit the `main` branch `README.md` file and add a new line and merge it. You can easily edit the file in the GitHub interface by clicking on the `pencil icon`.
 
-
-
-# 14_edit
-
-<!--  link image from our server-->
+<p align="center">
+ <a target="_blank" href="https://github.com/btdevcommunity/documentation/blob/main/git-github-tutorial.md">
+  <img src="https://github.com/btdevcommunity/documentation/blob/main/assets/git-github-tutorial/14_edit.png" alt="Edit" />
+ </a>
+</p>
 
 Files have been updated by committing from the GitHub interface (Not recommended but you can commit from here too. Use Visual Code Editor which has a built-in git version control to make changes from your local machine ).
 
-
-
-# 15_new_line_added
-
-<!--  link image from our server-->
+<p align="center">
+ <a target="_blank" href="https://github.com/btdevcommunity/documentation/blob/main/git-github-tutorial.md">
+  <img src="https://github.com/btdevcommunity/documentation/blob/main/assets/git-github-tutorial/15_new_line_added.png" alt="Edited" />
+ </a>
+</p>
 
 Now we will fetch these changes to our local repository.
 Run this command: `$ git pull origin main`
-
-<!--  link image from our server-->
 
 ```bash
 $ git pull orgin main
@@ -549,8 +479,6 @@ Date:   Tue Feb 8 22:10:02 2022 +0600
     First Commit
 ```
 
-<!--  link image from our server-->
-
 Note: It is recommended to delete the branch after merging into the primary branch as it may get confusing with multiple branches..
 
 Additional command
@@ -559,9 +487,7 @@ Additional command
 - Delete branch: `$ get branch -d <name of branch>`
 
 
-
 #### You sucessfully completed learning basic Git
-
 
 
 Additional Resources
