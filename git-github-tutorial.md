@@ -1,10 +1,12 @@
 # <p align="center">Introduction to GitHub</p>
 
+</br>
 
 ## What is Git?
 
 ***Git*** is a free and open-source distributed *version control system* designed originally by Linus Torvalds.
 
+</br>
 
 ## Difference Between Github and Git
 
@@ -19,12 +21,11 @@
 | Launched in 2008.                          | Released in 2005.                                          |
 | Built-in user management system.           | No user management feature.                                |
 
+</br>
 
 ## What is GitHub?
 
 ***GitHub*** is an internet hosting provider for the software development and version control system using *Git*. It offers the distributed version control and source code management (SCM) functionality of Git and its own additional features.
-
-
 
 ## Best Features of GitHub:
 
@@ -40,8 +41,11 @@
 - Open Source project (Public Repositories)
 - Corporates and companies to host their code in private repository 
 
+</br>
 
 ## Configure and using Git and GitHub
+
+</br>
 
 ### Step 0: Install Git and create an account in Github.
 
@@ -67,6 +71,8 @@ Some basic commands that we will be using are:
 4. `pwd` - *View the present working directory*
 5. `touch` - *Create files*
 
+</br>
+
 ### Step 1: Create local git repository
 
 When creating a new project in your local machine using git, you will create a repository also known as a repo in short.
@@ -74,16 +80,14 @@ When creating a new project in your local machine using git, you will create a r
 *For Windows:*
 Right Click on the directory where you want to create the repository and click `Git Bash Here`
 
-# Image
-
-*For Mac and Linux:*
-Open `Git Bash` or `Terminal` and go to the directory in which you want to create the local repository using `cd` (change directory) command. This can also be done in windows.
-
 <p align="center">
  <a target="_blank" href="https://github.com/btdevcommunity/documentation/blob/main/git-github-tutorial.md">
   <img src="https://github.com/btdevcommunity/documentation/blob/main/assets/git-github-tutorial/1_git_bash_options.png" alt="Git Bash Option" height="370px" width="298px"/>
  </a>
 </p>
+
+*For Mac and Linux:*
+Open `Git Bash` or `Terminal` and go to the directory in which you want to create the local repository using `cd` (change directory) command. This can also be done in windows.
 
 To begin moving to your working directory use the cd command if you haven't clicked `Git Bash Here` in windows. For Mac and Linux operating systems, you may follow this until you reach your desired directory. 
 
@@ -118,6 +122,8 @@ Initialized empty Git repository in D:/new_project/.git/
 
 Once you run the `$ git init` command, you get some hints and a command at the end showing that the git repository is initialized in your particular directory.
 
+</br>
+
 ### Step 2: Add new files to the repository
 
 You can create new files using your desired text editor or via `touch` command.
@@ -147,6 +153,8 @@ nothing added to commit but untracked files present (use "git add" to track)
 ```
 
  Here, the `$ git status` command says that you have created a file called `README.md` but it says it's untracked and you haven't added it to a branch to be tracked. It won't be added to the git branch and get tracked unless you use the  `$ git add` command.
+ 
+ </br>
 
 #### An interlude: The staging environment, the commit and you.
 
@@ -162,6 +170,8 @@ To add a file to a commit,  first, you need to add it to the staging environment
 - `$ git add <file name>` which will be done in *step 3*
 
 *Note: The staging environment, also called `staging` is the preferred term but it is also referred to as `indexing`.*
+
+</br>
 
 ### Step 3: Add a file to the staging environment
 
@@ -181,6 +191,8 @@ Changes to be committed:
 	new file:   README.md
 ```
 
+</br>
+
 ### Step 4: Create a commit
 
 Run a command `$ git commit -m <Your commit message>` to create a commit from your staged file.
@@ -193,6 +205,8 @@ $ git commit -m "First Commit"
 ```
 
 The message at the end of the command should be something related to the commit contained, it can be a new feature, bug fixes or typos. Don’t put a message like `“ashajsdhgf”` or `“updates”`. This is because other programmers going through your project won't be understanding what changes you made in the commit. Commit lives forever in the repository and if you leave a meaningful commit message it will help other programmers to understand easily or it can be you in future who want to figure out why this change was made years later.
+
+</br>
 
 ### Step 5: Create new branch
 
@@ -221,6 +235,8 @@ $ git branch
 The branch name with an asterisk indicates which branch you are currently at the moment.
 
 *Note: By default, every git repository’s first branch is the master branch and is named as the `main` branch primary branch in a project.*
+
+</br>
 
 ### Step 6: Create a new repository on GitHub
 
@@ -288,6 +304,8 @@ Refresh your GitHub page you will see your local repository pushed successfully*
  </a>
 </p>
 
+</br>
+
 ### Step 7: Push a branch to GitHub
 
 Now we will push the local branch which we have created to the GitHub repository.
@@ -316,6 +334,8 @@ You can see now that two branches are pushed to the GitHub repository from our l
 </p>
 
 Note: If this is your first time using GitHub locally then it might prompt you to log in to GitHub username and password.
+
+</br>
 
 ### Step 8: Create a pull request (PR)
 
@@ -382,6 +402,8 @@ Click on `create pull request`.
  </a>
 </p>
 
+</br>
+
 ### Step 9: Merge a Pull Request
 
 Now click on `merge pull request`. This will merge the changes into the primary branch
@@ -408,6 +430,7 @@ Click on the `commit` tab where you can see the hash code of the commit. *Hash c
  </a>
 </p>
 
+</br>
 
 ### Step 10: Get GitHub changes to your local machine
 
